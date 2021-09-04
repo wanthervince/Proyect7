@@ -1,0 +1,64 @@
+.conten {
+  width: 50vw;
+  height: 90vh;
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.conten > h1 {
+  font-size: 3.5rem;
+}
+.conten_result {
+  background-color: rgba(240, 248, 255, 0);
+  height: 50%;
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 16px black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.conten_result > h3 {
+  font-size: 3rem;
+}
+.conten_result > h4 {
+  font-size: 6rem;
+}
+.conten_result > p {
+  font-size: 2rem;
+  line-height: 1;
+}
+.buttom {
+  margin: 1.5rem;
+  width: 128%;
+  grid-area: buttom;
+  height: 5rem;
+  color: aliceblue;
+  background-image: linear-gradient(
+    to right,
+    rgb(8, 11, 219) -80%,
+    rgb(131, 3, 216)
+  );
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.562);
+  box-shadow: 0 0 10px black;
+  transition: 0.3s;
+}
+.buttom:active {
+  box-shadow: none;
+}

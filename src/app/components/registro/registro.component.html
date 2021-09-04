@@ -1,0 +1,52 @@
+<div class="conten">
+  <h1>CONVERT</h1>
+  <div class="conten__card">
+    <div
+      [ngClass]="{ menActive: gen === 0 }"
+      class="card men"
+      (click)="activeGen(0)"
+    >
+      <i class="fas fa-mars icon"></i>
+      <p>MEN</p>
+    </div>
+    <div
+      [ngClass]="{ womenActive: gen === 1 }"
+      class="card women"
+      (click)="activeGen(1)"
+    >
+      <i class="fas fa-venus icon"></i>
+      <p>WOMAN</p>
+    </div>
+    <div class="card size">
+      <i class="fas fa-ruler-vertical icon-min"></i>
+      <h2>Size</h2>
+      <h3>{{ size }} cm</h3>
+      <input
+        type="range"
+        id="size"
+        name="size"
+        min="0"
+        max="200"
+        (input)="value($event)"
+        [value]="size"
+      />
+    </div>
+    <div class="card weight">
+      <i class="fas fa-weight icon-min"></i>
+      <h3>{{ weigth }}<span> Kg</span></h3>
+      <div class="btn_group">
+        <button class="up-down" (click)="weigth = weigth - 1">-</button>
+        <button class="up-down" (click)="weigth = weigth + 1">+</button>
+      </div>
+    </div>
+    <div class="card age">
+      <i class="fas fa-calendar-day icon-min"></i>
+      <h3>{{ age }} <span>Age</span></h3>
+      <div class="btn_group">
+        <button class="up-down" (click)="age = age - 1">-</button>
+        <button class="up-down" (click)="age = age + 1">+</button>
+      </div>
+    </div>
+    <button class="buttom" (click)="sendData()">GO</button>
+  </div>
+</div>
